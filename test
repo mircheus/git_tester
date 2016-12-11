@@ -1,0 +1,15 @@
+string = input()
+result = ''
+length = len(string)
+for i in range(length+1):
+    if i != length:
+        if string[i] == string[i+1]:
+            continue
+        else:
+            a = string[i]
+            k = string.count(a)
+            result += a +str(k)
+
+    else:
+        break
+print(result)
